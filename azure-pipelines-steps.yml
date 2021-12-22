@@ -11,3 +11,17 @@ steps:
 - script: |
     npm run build
   displayName: 'Compile and package'
+
+- task: ms-devlabs.vsts-developer-tools-build-tasks.tfx-installer-build-task.TfxInstaller@3
+  displayName: 'Use Node CLI for Azure DevOps (tfx-cli): v0.9.x'
+
+- task: ms-devlabs.vsts-developer-tools-build-tasks.publish-extension-build-task.PublishAzureDevOpsExtension@3
+  displayName: 'Publish Extension'
+  inputs:
+    connectedServiceName: 'svc-leomoreira-marketplace'
+    fileType: vsix
+    vsixFile: '*.vsix'
+    updateTasksVersion: false
+    extensionVisibility: privatepreview
+    extensionPricing: free
+    shareWith: 'code-poc,rhim'

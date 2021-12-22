@@ -1,6 +1,8 @@
 # Azure Pipelines configuration that builds and packages the extension.
 # To learn more about Azure Pipelines: https://aka.ms/learn-azure-pipelines
-
+trigger:
+  - master
+  
 jobs:
 - job: Linux
   pool:
