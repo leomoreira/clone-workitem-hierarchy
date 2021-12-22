@@ -1,0 +1,42 @@
+{
+    "contributions": [
+        {
+            "id": "clone-workitem-hierarchy-menu-item",
+            "type": "ms.vss-web.action",
+            "targets": [
+                "ms.vss-work-web.work-item-context-menu",
+                "ms.vss-work-web.query-result-work-item-menu",
+                "ms.vss-work-web.work-item-toolbar-menu",
+                "ms.vss-work-web.backlog-item-menu"
+            ],
+            "properties": {
+                "text": "Clone Work Item Hierarchy!",
+                "uri": "dist/Menu/Menu.html",
+                "icon": "static/context-menu-icon.png",
+                "registeredObjectId": "clone-workitem-hierarchy-menu"
+            },
+            "constraints": [
+                {
+                  "name": "Feature",
+                  "properties": {
+                    "featureId": "leomoreira.clone-workitem-hierarchy.clone-workitem-hierarchy-feature"
+                  }
+                }
+            ]
+        },
+        {
+            "id": "clone-workitem-hierarchy-feature",
+            "type": "ms.vss-web.feature",
+            "targets": ["ms.vss-web.managed-features"],
+            "description": "Enables the menu item from Clone Work Item Hierarchy the extension.",
+            "properties": {
+              "name": "Enable Clone Work Item Hierarchy",
+              "userConfigurable": true,
+              "hostConfigurable": true,
+              "defaultState":  false,
+              "hostScopes": ["project", null]
+            }
+          }
+    ],
+    "scopes": ["vso.work_full"]
+}

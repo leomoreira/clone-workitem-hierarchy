@@ -1,0 +1,34 @@
+{
+    "manifestVersion": 1,
+    "id": "clone-workitem-hierarchy",
+    "publisher": "leomoreira",
+    "version": "0.0.10",
+    "name": "Clone Work Item Hierarchy",
+    "description": "Clone a work item hierarchy by a click of a button.",
+    "categories": [
+        "Azure Boards"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "logo.png"
+    },
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
+    "files": [
+        {
+            "path": "static",
+            "addressable": true
+        },
+        {
+            "path": "dist",
+            "addressable": true
+        }
+    ]
+}
