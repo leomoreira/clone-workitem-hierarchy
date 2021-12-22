@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "clone-workitem-hierarchy",
     "publisher": "leomoreira",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "name": "Clone Work Item Hierarchy",
     "description": "Clone a work item hierarchy by a click of a button.",
     "categories": [
