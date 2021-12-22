@@ -4,15 +4,9 @@ trigger:
   - master
   
 jobs:
-- job: Linux
-  pool:
-    vmImage: 'ubuntu-16.04'
-  steps:
-  - template: azure-pipelines-steps.yml
-
 - job: Windows
   pool:
-    vmImage: 'vs2017-win2016'
+    vmImage: 'windows-2019'
   steps:
   - template: azure-pipelines-steps.yml
   

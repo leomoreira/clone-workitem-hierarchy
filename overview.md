@@ -1,1 +1,1 @@
-Clone Workitem Hierarchy Azure DevOps extension
+Clone Workitem Hierarchy Azure DevOps extension and be able to clone your full work item hierarchy.

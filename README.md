@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/code-poc/clone-workitem-hierarchy/_apis/build/status/leomoreira.clone-workitem-hierarchy?branchName=master)](https://dev.azure.com/code-poc/clone-workitem-hierarchy/_build/latest?definitionId=3&branchName=master)
+
 # Azure DevOps Clone Work Item Extension
 
 This repository generates an [Azure DevOps extension](https://docs.microsoft.com/en-us/azure/devops/extend/overview?view=vsts) for cloning a work item hierarchy, what surprisingly  is not supported by the default clone functionality and it is based on the [Azure DevOps extension](https://github.com/microsoft/azure-devops-extension-sample) menu sample.
